@@ -1,0 +1,35 @@
+package narrato.articles.usecases.deletecomment;
+
+import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
+import narrato.users.AuthService;
+import narrato.users.usecases.shared.models.LoginUser;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+class DeleteCommentController {
+    private final AuthService authService;
+    private final DeleteCommentRepository deleteComment;
+    private final FindArticleBySlugRepository findArticleBySlug;
+
+    DeleteCommentController(
+            DeleteCommentRepository deleteComment,
+            AuthService authService,
+            FindArticleBySlugRepository findArticleBySlug) {
+        this.deleteComment = deleteComment;
+        this.authService = authService;
+        this.findArticleBySlug = findArticleBySlug;
+    }
+
+    @DeleteMapping("/api/articles/{slug}/comments/{commentId}")
+    @Operation(summary = "Delete Comment", tags = "Comments")
+    @SecurityRequirement(name = "Token")
+    void delete(@PathVariable String slug, @PathVariable Long commentId) {
+        LoginUser loginUser = authService.getCurrentUserOrThrow();
+        var articleId = findArticleBySlug.getArticleMetadataBySlugOrThrow(slug).articleId();
+        deleteComment.deleteComment(loginUser, articleId, commentId);
+    }
+}

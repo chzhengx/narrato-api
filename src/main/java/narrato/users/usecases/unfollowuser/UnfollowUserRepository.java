@@ -1,0 +1,29 @@
+package narrato.users.usecases.unfollowuser;
+
+import static narrato.jooq.models.tables.UserFollower.USER_FOLLOWER;
+import static narrato.jooq.models.tables.Users.USERS;
+import static org.jooq.impl.DSL.select;
+
+import narrato.users.usecases.shared.models.LoginUser;
+import org.jooq.DSLContext;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
+@Transactional
+class UnfollowUserRepository {
+    private final DSLContext dsl;
+
+    UnfollowUserRepository(DSLContext dsl) {
+        this.dsl = dsl;
+    }
+
+    public void unfollow(LoginUser loginUser, String username) {
+        dsl.deleteFrom(USER_FOLLOWER)
+                .where(USER_FOLLOWER
+                        .FROM_ID
+                        .eq(loginUser.id())
+                        .and(USER_FOLLOWER.TO_ID.in(select(USERS.ID).from(USERS).where(USERS.USERNAME.eq(username)))))
+                .execute();
+    }
+}

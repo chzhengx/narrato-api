@@ -1,0 +1,31 @@
+name: 'narrato-api'
+services:
+  narrato-api:
+    image: chzhengx/narrato-api
+    container_name: narrato-api
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_HOST: narrato-postgres
+      DB_PORT: 5432
+      DB_DATABASE: postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on:
+      - narrato-postgres
+    deploy:
+      resources:
+        limits:
+          memory: 1024m
+
+  narrato-postgres:
+    image: postgres:16-alpine
+    container_name: narrato-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432"
