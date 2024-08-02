@@ -4,14 +4,14 @@ import static narrato.jooq.models.tables.ArticleTag.ARTICLE_TAG;
 import static narrato.jooq.models.tables.Articles.ARTICLES;
 import static narrato.jooq.models.tables.Tags.TAGS;
 
-import narrato.articles.usecases.shared.models.Article;
-import narrato.articles.usecases.shared.models.Tag;
-import narrato.shared.BadRequestException;
-import narrato.users.usecases.shared.models.LoginUser;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import narrato.articles.usecases.shared.models.Article;
+import narrato.articles.usecases.shared.models.Tag;
+import narrato.shared.BadRequestException;
+import narrato.users.usecases.shared.models.LoginUser;
 import org.jooq.DSLContext;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Repository;

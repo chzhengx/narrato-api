@@ -1,11 +1,11 @@
 package narrato.articles.usecases.deletearticle;
 
-import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
-import narrato.users.AuthService;
-import narrato.users.usecases.shared.models.LoginUser;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import java.util.Objects;
+import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
+import narrato.users.AuthService;
+import narrato.users.usecases.shared.models.LoginUser;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;

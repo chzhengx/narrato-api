@@ -2,8 +2,8 @@ package narrato.users.usecases.registration;
 
 import static narrato.jooq.models.tables.Users.USERS;
 
-import narrato.users.usecases.shared.models.User;
 import java.time.LocalDateTime;
+import narrato.users.usecases.shared.models.User;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 

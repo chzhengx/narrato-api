@@ -2,8 +2,8 @@ package narrato.articles.usecases.favoritearticle;
 
 import static narrato.jooq.models.tables.ArticleFavorite.ARTICLE_FAVORITE;
 
-import narrato.users.usecases.shared.models.LoginUser;
 import java.time.LocalDateTime;
+import narrato.users.usecases.shared.models.LoginUser;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 

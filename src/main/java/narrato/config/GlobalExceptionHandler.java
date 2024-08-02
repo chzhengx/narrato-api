@@ -1,8 +1,8 @@
 package narrato.config;
 
+import java.util.List;
 import narrato.shared.BadRequestException;
 import narrato.shared.ResourceNotFoundException;
-import java.util.List;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

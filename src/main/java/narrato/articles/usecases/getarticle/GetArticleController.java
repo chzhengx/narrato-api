@@ -1,11 +1,11 @@
 package narrato.articles.usecases.getarticle;
 
+import io.swagger.v3.oas.annotations.Operation;
 import narrato.articles.usecases.shared.models.SingleArticleResponse;
 import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
 import narrato.shared.ResourceNotFoundException;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.LoginUser;
-import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

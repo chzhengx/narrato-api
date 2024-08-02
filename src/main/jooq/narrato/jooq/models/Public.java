@@ -4,6 +4,9 @@
 package narrato.jooq.models;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 import narrato.jooq.models.tables.ArticleFavorite;
 import narrato.jooq.models.tables.ArticleTag;
 import narrato.jooq.models.tables.Articles;
@@ -11,9 +14,6 @@ import narrato.jooq.models.tables.Comments;
 import narrato.jooq.models.tables.Tags;
 import narrato.jooq.models.tables.UserFollower;
 import narrato.jooq.models.tables.Users;
-
-import java.util.Arrays;
-import java.util.List;
 
 import org.jooq.Catalog;
 import org.jooq.Sequence;

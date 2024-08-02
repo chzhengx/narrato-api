@@ -5,7 +5,7 @@ import org.springframework.modulith.core.ApplicationModules;
 import org.springframework.modulith.docs.Documenter;
 
 class ModularityTests {
-    private final ApplicationModules modules = ApplicationModules.of(ConduitApplication.class);
+    private final ApplicationModules modules = ApplicationModules.of(NarratoApplication.class);
 
     @Test
     void verifiesModularStructure() {

@@ -1,8 +1,8 @@
 package narrato.articles.usecases.getcomments;
 
+import io.swagger.v3.oas.annotations.Operation;
 import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
 import narrato.users.AuthService;
-import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

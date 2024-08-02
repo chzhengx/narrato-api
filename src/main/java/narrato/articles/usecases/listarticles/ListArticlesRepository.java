@@ -12,12 +12,12 @@ import static org.jooq.impl.DSL.multiset;
 import static org.jooq.impl.DSL.select;
 import static org.jooq.impl.DSL.selectCount;
 
+import java.util.ArrayList;
+import java.util.List;
 import narrato.articles.usecases.shared.models.Article;
 import narrato.articles.usecases.shared.models.MultipleArticles;
 import narrato.users.usecases.shared.models.LoginUser;
 import narrato.users.usecases.shared.models.Profile;
-import java.util.ArrayList;
-import java.util.List;
 import org.jooq.Condition;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;

@@ -1,12 +1,12 @@
 package narrato.config;
 
-import narrato.ApplicationProperties;
-import narrato.users.AuthService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import narrato.ApplicationProperties;
+import narrato.users.AuthService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 

@@ -1,11 +1,11 @@
 package narrato.users.usecases.followuser;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.LoginUser;
 import narrato.users.usecases.shared.models.ProfileResponse;
 import narrato.users.usecases.shared.repo.GetProfileRepository;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

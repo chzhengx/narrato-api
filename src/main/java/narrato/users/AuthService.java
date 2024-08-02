@@ -1,10 +1,10 @@
 package narrato.users;
 
+import java.util.List;
+import java.util.Optional;
 import narrato.users.usecases.shared.JwtHelper;
 import narrato.users.usecases.shared.models.LoginUser;
 import narrato.users.usecases.shared.repo.FindUserRepository;
-import java.util.List;
-import java.util.Optional;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

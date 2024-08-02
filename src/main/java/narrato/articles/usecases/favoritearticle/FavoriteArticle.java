@@ -1,9 +1,9 @@
 package narrato.articles.usecases.favoritearticle;
 
+import java.util.Optional;
 import narrato.articles.usecases.shared.models.Article;
 import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
 import narrato.users.usecases.shared.models.LoginUser;
-import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

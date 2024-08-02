@@ -4,13 +4,13 @@
 package narrato.jooq.models.tables;
 
 
-import narrato.jooq.models.Keys;
-import narrato.jooq.models.Public;
-import narrato.jooq.models.tables.records.UserFollowerRecord;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
+
+import narrato.jooq.models.Keys;
+import narrato.jooq.models.Public;
+import narrato.jooq.models.tables.records.UserFollowerRecord;
 
 import org.jooq.Field;
 import org.jooq.ForeignKey;

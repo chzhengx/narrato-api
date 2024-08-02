@@ -2,9 +2,9 @@ package narrato.articles.usecases.deletecomment;
 
 import static narrato.jooq.models.tables.Comments.COMMENTS;
 
+import java.util.Objects;
 import narrato.shared.ResourceNotFoundException;
 import narrato.users.usecases.shared.models.LoginUser;
-import java.util.Objects;
 import org.jooq.DSLContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

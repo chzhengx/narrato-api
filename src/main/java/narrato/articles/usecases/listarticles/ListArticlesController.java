@@ -1,9 +1,9 @@
 package narrato.articles.usecases.listarticles;
 
+import io.swagger.v3.oas.annotations.Operation;
 import narrato.articles.usecases.shared.models.MultipleArticles;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.LoginUser;
-import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

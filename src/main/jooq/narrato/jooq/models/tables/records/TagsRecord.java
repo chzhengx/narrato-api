@@ -4,9 +4,9 @@
 package narrato.jooq.models.tables.records;
 
 
-import narrato.jooq.models.tables.Tags;
-
 import java.time.LocalDateTime;
+
+import narrato.jooq.models.tables.Tags;
 
 import org.jooq.Field;
 import org.jooq.Record1;

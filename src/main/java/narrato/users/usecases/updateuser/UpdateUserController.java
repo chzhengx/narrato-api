@@ -1,11 +1,11 @@
 package narrato.users.usecases.updateuser;
 
-import narrato.users.AuthService;
-import narrato.users.usecases.shared.models.LoginUser;
-import narrato.users.usecases.shared.models.UserResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
+import narrato.users.AuthService;
+import narrato.users.usecases.shared.models.LoginUser;
+import narrato.users.usecases.shared.models.UserResponse;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

@@ -2,9 +2,9 @@ package narrato.articles.usecases.createcomment;
 
 import static narrato.jooq.models.tables.Comments.COMMENTS;
 
+import java.time.LocalDateTime;
 import narrato.articles.usecases.shared.models.Comment;
 import narrato.users.usecases.shared.models.LoginUser;
-import java.time.LocalDateTime;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

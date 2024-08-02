@@ -1,14 +1,14 @@
 package narrato.articles.usecases.createcomment;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
 import narrato.articles.usecases.shared.models.Comment;
 import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
 import narrato.users.AuthService;
 import narrato.users.UserService;
 import narrato.users.usecases.shared.models.LoginUser;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotEmpty;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

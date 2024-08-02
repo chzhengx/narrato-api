@@ -1,11 +1,11 @@
 package narrato.articles.usecases.createarticle;
 
-import narrato.articles.usecases.shared.models.SingleArticleResponse;
-import narrato.users.AuthService;
-import narrato.users.usecases.shared.models.LoginUser;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
+import narrato.articles.usecases.shared.models.SingleArticleResponse;
+import narrato.users.AuthService;
+import narrato.users.usecases.shared.models.LoginUser;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

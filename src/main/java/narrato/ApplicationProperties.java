@@ -19,8 +19,7 @@ public record ApplicationProperties(OpenAPIProperties openapi, CorsProperties co
             @DefaultValue("v1.0.0") String version,
             Contact contact) {
 
-        public record Contact(
-                @DefaultValue("SivaLabs") String name, @DefaultValue("support@sivalabs.in") String email) {}
+        public record Contact(@DefaultValue("Narrato") String name, @DefaultValue("support@narrato.in") String email) {}
     }
 
     public record CorsProperties(

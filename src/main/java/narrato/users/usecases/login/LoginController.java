@@ -1,8 +1,8 @@
 package narrato.users.usecases.login;
 
-import narrato.users.usecases.shared.models.UserResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
+import narrato.users.usecases.shared.models.UserResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;

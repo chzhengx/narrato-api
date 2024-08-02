@@ -1,10 +1,10 @@
 package narrato.articles.usecases.feedarticles;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import narrato.articles.usecases.shared.models.MultipleArticles;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.LoginUser;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

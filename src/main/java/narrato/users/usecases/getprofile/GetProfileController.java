@@ -1,12 +1,12 @@
 package narrato.users.usecases.getprofile;
 
+import io.swagger.v3.oas.annotations.Operation;
+import java.util.Optional;
 import narrato.shared.ResourceNotFoundException;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.Profile;
 import narrato.users.usecases.shared.models.ProfileResponse;
 import narrato.users.usecases.shared.repo.GetProfileRepository;
-import io.swagger.v3.oas.annotations.Operation;
-import java.util.Optional;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

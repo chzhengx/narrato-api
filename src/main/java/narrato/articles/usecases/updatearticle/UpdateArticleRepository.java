@@ -2,13 +2,13 @@ package narrato.articles.usecases.updatearticle;
 
 import static narrato.jooq.models.tables.Articles.ARTICLES;
 
+import java.time.LocalDateTime;
+import java.util.Objects;
 import narrato.jooq.models.tables.records.ArticlesRecord;
 import narrato.shared.BadRequestException;
 import narrato.shared.ResourceNotFoundException;
 import narrato.shared.StringUtils;
 import narrato.users.usecases.shared.models.LoginUser;
-import java.time.LocalDateTime;
-import java.util.Objects;
 import org.jooq.DSLContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

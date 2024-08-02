@@ -5,9 +5,9 @@ import static narrato.jooq.models.tables.Users.USERS;
 import static org.jooq.impl.DSL.field;
 import static org.jooq.impl.DSL.selectCount;
 
+import java.util.Optional;
 import narrato.users.usecases.shared.models.LoginUser;
 import narrato.users.usecases.shared.models.Profile;
-import java.util.Optional;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 

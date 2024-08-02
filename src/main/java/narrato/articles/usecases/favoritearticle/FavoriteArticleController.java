@@ -1,10 +1,10 @@
 package narrato.articles.usecases.favoritearticle;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import narrato.articles.usecases.shared.models.SingleArticleResponse;
 import narrato.users.AuthService;
 import narrato.users.usecases.shared.models.LoginUser;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

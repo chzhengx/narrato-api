@@ -2,13 +2,13 @@ package narrato.users.usecases.shared;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-import narrato.ApplicationProperties;
-import narrato.users.usecases.shared.models.LoginUser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import java.util.Date;
 import javax.crypto.SecretKey;
+import narrato.ApplicationProperties;
+import narrato.users.usecases.shared.models.LoginUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

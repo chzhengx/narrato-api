@@ -1,8 +1,8 @@
 package narrato.articles.usecases.shared.models;
 
-import narrato.users.usecases.shared.models.Profile;
 import java.time.LocalDateTime;
 import java.util.List;
+import narrato.users.usecases.shared.models.Profile;
 
 public record Article(
         String slug,

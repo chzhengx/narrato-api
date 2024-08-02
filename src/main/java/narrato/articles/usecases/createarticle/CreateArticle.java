@@ -1,10 +1,10 @@
 package narrato.articles.usecases.createarticle;
 
+import java.time.LocalDateTime;
 import narrato.articles.usecases.shared.models.Article;
 import narrato.articles.usecases.shared.repo.FindArticleBySlugRepository;
 import narrato.shared.StringUtils;
 import narrato.users.usecases.shared.models.LoginUser;
-import java.time.LocalDateTime;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

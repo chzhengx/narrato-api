@@ -3,8 +3,8 @@ package narrato.users.usecases.shared.repo;
 import static narrato.jooq.models.tables.Users.USERS;
 import static org.jooq.Records.mapping;
 
-import narrato.users.usecases.shared.models.User;
 import java.util.Optional;
+import narrato.users.usecases.shared.models.User;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 

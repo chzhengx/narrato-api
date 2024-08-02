@@ -11,12 +11,12 @@ import static org.jooq.impl.DSL.multiset;
 import static org.jooq.impl.DSL.select;
 import static org.jooq.impl.DSL.selectCount;
 
+import java.util.Optional;
 import narrato.articles.usecases.shared.models.Article;
 import narrato.articles.usecases.shared.models.ArticleMetadata;
 import narrato.shared.ResourceNotFoundException;
 import narrato.users.usecases.shared.models.LoginUser;
 import narrato.users.usecases.shared.models.Profile;
-import java.util.Optional;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
 
